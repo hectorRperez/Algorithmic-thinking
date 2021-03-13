@@ -6,12 +6,12 @@ Variables are stored in random access memory (RAM). We sometimes call RAM "worki
 
 ~~~
 RAM is not where mp3s and apps get stored. In addition to "memory," your computer has storage 
-(sometimes called "persistent storage" or "disk"). While memory is where we keep the 
-variables our functions allocate as they crunch data for us, 
-storage is where we keep files like mp3s, videos, Word documents, 
-and even executable programs or apps.
+(sometimes called "persistent storage" or "disk"). While memory is where we keep the  variables our 
+functions allocate as they crunch data for us,  storage is where we keep files like mp3s, videos, Word documents, and even executable programs or apps.
 
-Memory (or RAM) is faster but has less space, while storage (or "disk") is slower but has more space. A modern laptop might have ~500GB of storage but only ~16GB of RAM.
+Memory (or RAM) is faster but has less space, while storage (or "disk") is slower but has more space. 
+
+A modern laptop might have ~500GB of storage but only ~16GB of RAM.
 ~~~
 
 Think of RAM like a really tall bookcase with a lot of shelves. Like, billions of shelves.
