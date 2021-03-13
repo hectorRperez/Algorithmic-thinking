@@ -16,31 +16,31 @@ To understand binary, let's take a closer look at how decimal numbers work. Take
 
 Notice we have two "1"s here, but they don't mean the same thing. The leftmost "1" means 100, and the rightmost "1" means 1. That's because the leftmost "1" is in the hundreds place, while the rightmost "1" is in the ones place. And the "0" between them is in the tens place.
 
-![Texto alternativo](7.jpg)
+![Texto alternativo](img/7.jpg)
 
 **So this "101" in base 10 is telling us we have "1 hundred, 0 tens, and 1 one."**
 
-![Texto alternativo](8.jpg)
+![Texto alternativo](img/8.jpg)
 
 Notice how the places in base 10 (ones place, tens place, hundreds place, etc.) are sequential powers of 10:
 
-![Texto alternativo](9.jpg)
+![Texto alternativo](img/9.jpg)
 
 The places in binary (base 2) are sequential powers of 2:
 
-![Texto alternativo](10.jpg)
+![Texto alternativo](img/10.jpg)
 
 So let's take that same "101" but this time let's read it as a binary number:
 
-![Texto alternativo](11.jpg)
+![Texto alternativo](img/11.jpg)
 
 Reading this from right to left: we have a 1 in the ones place, a 0 in the twos place, and a 1 in the fours place. So our total is 4 + 0 + 1 which is 5.
 
-![Texto alternativo](12.jpg)
+![Texto alternativo](img/12.jpg)
 
 Here's how we'd count up to 12 in binary:
 
-![Texto alternativo](13.jpg)
+![Texto alternativo](img/13.jpg)
 
 So far we've been talking about **unsigned integers** ("unsigned" means non-negative, and "integer" means a whole number, not a fraction or decimal). Storing other numbers isn't hard though. Here's how some other numbers could be stored:
 
