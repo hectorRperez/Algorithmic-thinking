@@ -12,7 +12,7 @@ Memory (or RAM) is faster but has less space, while storage (or "disk") is slowe
 
 Think of RAM like a really tall bookcase with a lot of shelves. Like, billions of shelves.
 
-![Texto alternativo](1.jpg)
+![Texto alternativo](img/1.jpg)
 
 ~~~
 It just keeps going down. Again, picture billions of these shelves.
@@ -20,23 +20,23 @@ It just keeps going down. Again, picture billions of these shelves.
 
 The shelves are numbered.
 
-![Texto alternativo](2.jpg)
+![Texto alternativo](img/2.jpg)
 
 We call a shelf's number its **address**.
 
 Each shelf holds 8 **bits**. A bit is a tiny electrical switch that can be turned "on" or "off." But instead of calling it "on" or "off" we call it 1 or 0.
 
-![Texto alternativo](3.jpg)
+![Texto alternativo](img/3.jpg)
 
 8 bits is called a **byte**. So each shelf has one byte (8 bits) of storage.
 
 Of course, we also have a processor that does all the real work inside our computer:
 
-![Texto alternativo](4.jpg)
+![Texto alternativo](img/4.jpg)
 
 It's connected to a **memory controller**. The memory controller does the actual reading and writing to and from RAM. It has a direct connection to each shelf of RAM.
 
-![Texto alternativo](5.jpg)
+![Texto alternativo](img/5.jpg)
 
 That direct connection is important. It means we can access address 0 and then immediately access address 918,873 without having to "climb down" our massive bookshelf of RAM.
 
@@ -50,7 +50,7 @@ Even though the memory controller can jump between far-apart memory addresses qu
 
 The processor has a **cache** where it stores a copy of stuff it's recently read from RAM.
 
-![Texto alternativo](6.jpg)
+![Texto alternativo](img/6.jpg)
 
 ~~~
 Actually, it has a series of caches. But we can picture them all lumped together as one cache like this.
