@@ -47,8 +47,9 @@ That's why we call it Random Access Memory (RAM)—we can Access the bits at any
 
 ~~~
 Spinning hard drives don't have this "random access" superpower, because there's no direct connection to 
-each byte on the disk. Instead, there's a reader—called a head—that moves along the surface of a spinning storage disk (like the needle on a record player). Reading bytes that are far apart takes longer because 
-you have to wait for the head to physically move along the disk.
+each byte on the disk. 
+Instead, there's a reader—called a head—that moves along the surface of a spinning storage disk (like the needle on a record player). 
+Reading bytes that are far apart takes longer because you have to wait for the head to physically move along the disk.
 ~~~
 
 Even though the memory controller can jump between far-apart memory addresses quickly, programs tend to access memory that's nearby. **So computers are tuned to get an extra speed boost when reading memory addresses that're close to each other**. Here's how it works:
