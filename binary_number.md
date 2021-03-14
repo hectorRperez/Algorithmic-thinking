@@ -56,9 +56,8 @@ In reality we usually do something slightly fancier for each of these. But these
 ~~~
 We've talked about base 10 and base 2...you may have also seen base 16, also called hexadecimal or hex.
 
-In hex, our possible values for each digit are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, and f. Hex numbers are often prefixed with "0x" or "#".
-
-In hex, our possible values for each digit are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, and f. Hex numbers are often prefixed with "0x" or "#".
+In hex, our possible values for each digit are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, and f. 
+Hex numbers are often prefixed with "0x" or "#".
 
 In CSS, colors are sometimes expressed in hex. Interview Cake's signature blue color is "#5bc0de".
 ~~~
