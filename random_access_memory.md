@@ -46,8 +46,7 @@ That direct connection is important. It means we can access address 0 and then i
 That's why we call it Random Access Memory (RAM)—we can Access the bits at any Random address in Memory right away.
 
 ~~~
-Spinning hard drives don't have this "random access" superpower, because there's no direct connection to 
-each byte on the disk. 
+Spinning hard drives don't have this "random access" superpower, because there's no direct connection to each byte on the disk. 
 Instead, there's a reader—called a head—that moves along the surface of a spinning storage disk (like the needle on a record player). 
 Reading bytes that are far apart takes longer because you have to wait for the head to physically move along the disk.
 ~~~
