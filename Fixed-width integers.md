@@ -45,7 +45,7 @@ So O(1) space is much smaller than O(n) space. And O(1) time is much faster than
 
 In big O notation, we say **fixed-width integers take up constant space** or O(1) space.
 
-And because they have a constant number of bits, **most simple operations on fixed-width integers (addition, subtraction, multiplication, division) take constant time (O(1)O(1) time).**
+And because they have a constant number of bits, **most simple operations on fixed-width integers (addition, subtraction, multiplication, division) take constant time (O(1) time).**
 
 So fixed-width integers are very space efficient and time efficient.
 
