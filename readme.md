@@ -18,5 +18,5 @@ Don't worry—we'll skip the convoluted academic jargon and proofs.
 - Dynamic Arrays
 - Linked Lists
 - Hash Tables
-
+- Summary
 ~~~
