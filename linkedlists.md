@@ -157,6 +157,6 @@ Lookups with a linked list are more of a process, because we have no way of know
 
 That's i + 1 steps down our linked list to get to the iith node (we made our function zero-based to match indices in arrays).**So linked lists have O(i)-time lookups.** Much slower than the O(1)-time lookups for arrays and dynamic arrays.
 
-Not only that***—walking down a linked list is not cache-friendly***. Because the next node could be anywhere in memory, we don't get any benefit from the processor cache. This means lookups in a linked list are even slower.
+Not only that **walking down a linked list is not cache-friendly**. Because the next node could be anywhere in memory, we don't get any benefit from the processor cache. This means lookups in a linked list are even slower.
 
 So the tradeoff with linked lists is they have faster prepends and faster appends than dynamic arrays, but they have slower lookups.
