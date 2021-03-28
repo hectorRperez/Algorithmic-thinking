@@ -20,6 +20,8 @@ But look at all that wasted space after "Bill". And what if we wanted to store a
 
 There's a better way. Instead of storing the strings right inside our array, let's just put the strings wherever we can fit them in memory. Then we'll have each element in our array hold the address in memory of its corresponding string. Each address is an integer, so really our outer array is just an array of integers. We can call each of these integers a **pointer**, since it points to another spot in memory.
 
+![Texto alternativo](img/54.jpg)
+
 ~~~
 The pointers are marked with a * at the beginning.
 ~~~
