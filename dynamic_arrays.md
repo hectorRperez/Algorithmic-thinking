@@ -32,7 +32,7 @@ At this point, our dynamic array contains 4 items. It has a length of 4. But the
 
 We'd say this dynamic array's **size** is 4 and its **capacity** is 10.
 
-![Texto alternativo](img/25.jpg)
+![Texto alternativo](img/55.jpg)
 
 The dynamic array stores an end_index to keep track of where the dynamic array ends and the extra capacity begins.
 
@@ -61,11 +61,15 @@ Why not just extend the existing array? Because that memory might already be tak
 
 **4. Append your new item.**
 
+![Texto alternativo](img/56.jpg)
+
 We could call these special appends "doubling" appends since they require us to make a new array that's (usually) double the size of the old one.
 
-Appending an item to an array is usually an O(1) time operation, but a **single doubling append is an O(n) time operation since we have to copy all nn items from our array.**
+Appending an item to an array is usually an O(1) time operation, but a **single doubling append is an O(n) time operation since we have to copy all n items from our array.**
 
 Does that mean an append operation on a dynamic array is always worst-case O(n)time? Yes. So if we make an empty dynamic array and append nn items, that has some crazy time cost like O(n^2) or O(n!)?!?! Not quite.
+
+While the time cost of each special O(n) doubling append doubles each time, the number of O(1) appends you get until the next doubling append also doubles. This kind of "cancels out," and we can say each append has an average cost or amortized cost of O(1). ↴
 
 Given this, in industry we usually wave our hands and say dynamic arrays have a time cost of O(1) for appends, even though strictly speaking that's only true for the average case or the amortized cost.
 
