@@ -77,10 +77,10 @@ Now, what if instead of a linked list, our string had been a dynamic array? We m
 
 So with a dynamic array, our append would have a worst-case time cost of O(n).
 
-Linked lists have worst-case O(1)O(1)-time appends, which is better than the worst-case O(n)time of dynamic arrays.
+Linked lists have worst-case O(1)-time appends, which is better than the worst-case O(n)time of dynamic arrays.
 
 ~~~
-That worst-case part is important. The average case runtime for appends to linked lists and dynamic arrays is the same: O(1)O(1).
+That worst-case part is important. The average case runtime for appends to linked lists and dynamic arrays is the same: O(1).
 ~~~
 
 Now, what if we wanted to prepend something to our string? Let's say we wanted to put a "B" at the beginning.
@@ -106,17 +106,28 @@ And we wanted to add in that "B":
 
 ![Texto alternativo](img/43.jpg)
 
-We have to move each character one 
+Eep. We have to make room for the "B"!
+
+We have to move each character one space down:
+
+![Texto alternativo](img/57.jpg)
+
+![Texto alternativo](img/58.jpg)
+
+![Texto alternativo](img/59.jpg)
+
+![Texto alternativo](img/60.jpg)
 
 Now we can drop the "B" in there:
 
-![Texto alternativo](img/45.jpg)
+![Texto alternativo](img/61.jpg)
+
 
 What's our time cost here?
 
 It's all in the step where we made room for the first letter. We had to move all n characters in our string. One at a time. That's O(n) time.
 
-**So linked lists have faster prepends (O(1) time) than dynamic arrays (O(n) time).**
+So linked lists have faster prepends (O(1) time) than dynamic arrays (O(n) time).
 
 ~~~
 No "worst case" caveat this time—prepends for dynamic arrays are always O(n) time. And prepends for linked lists are always O(1) time.
@@ -124,13 +135,12 @@ No "worst case" caveat this time—prepends for dynamic arrays are always O(n) t
 
 These quick appends and prepends for linked lists come from the fact that linked list nodes can go anywhere in memory. They don't have to sit right next to each other the way items in an array do.
 
-So if linked lists are so great, why do we usually store strings in an array? **Because arrays have O(1)-time lookups.** And those constant-time lookups come from the fact that all the array elements are lined up next to each other in memory.
+So if linked lists are so great, why do we usually store strings in an array? **Because arrays have O(1)-time lookups**. And those constant-time lookups come from the fact that all the array elements are lined up next to each other in memory.
 
-Lookups with a linked list are more of a process, because we have no way of knowing where the ith node is in memory. So we have to walk through the linked list node by node, counting as we go, until we hit the i th item.
+Lookups with a linked list are more of a process, because we have no way of knowing where the *i*th node is in memory. So we have to walk through the linked list node by node, counting as we go, until we hit the *i*th item.
 
 ```js
-  
-  function getIthItemInLinkedList(head, i) {
+function getIthItemInLinkedList(head, i) {
 
     if (i < 0) {
         throw new Error("i can't be negative: " + i);
@@ -155,8 +165,10 @@ Lookups with a linked list are more of a process, because we have no way of know
 }
 ```
 
-That's i + 1 steps down our linked list to get to the iith node (we made our function zero-based to match indices in arrays).**So linked lists have O(i)-time lookups.** Much slower than the O(1)-time lookups for arrays and dynamic arrays.
+That's i + 1 steps down our linked list to get to the iith node (we made our function zero-based to match indices in arrays). So linked lists have O(i)-time lookups. Much slower than the O(1)-time lookups for arrays and dynamic arrays.
 
-Not only that **walking down a linked list is not cache-friendly**. Because the next node could be anywhere in memory, we don't get any benefit from the processor cache. This means lookups in a linked list are even slower.
+Not only that—**walking down a linked list is not cache-friendly**. Because the next node could be anywhere in memory, we don't get any benefit from the processor cache. This means lookups in a linked list are even slower.
 
 So the tradeoff with linked lists is they have faster prepends and faster appends than dynamic arrays, but they have slower lookups.
+
+
